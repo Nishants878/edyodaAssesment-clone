@@ -8,11 +8,13 @@ export default class Header extends Component {
    render(){
       return (
          <div className={classes.NavigationContainer}>
+            
              <div className={classes.NavigationContentLeft}>
   
                  <div className={classes.LogoContainer}>
                     <Link className={classes.NavLink} to="#">
                        <img className={classes.LogoImage} src={EdyodaLogo} alt="Logo"/>
+                       
                     </Link>
                  </div>
   
