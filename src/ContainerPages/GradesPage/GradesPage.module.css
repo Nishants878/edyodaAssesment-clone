@@ -1,0 +1,152 @@
+.GradesMainContainer{
+    margin-top: 80px;
+    
+}
+.NavWrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 290px;
+    font-size: 24px;
+    max-width: 900px;
+    border-bottom: 1px solid #dee2e6;
+}
+.NavLinks{
+    margin-right: 10px;
+    border: 1px solid transparent;
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+    text-decoration: none;
+    outline: none;
+    color: black !important;
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    cursor: pointer;
+}
+.Active{
+    background-color: #fff;
+    border-color: #dee2e6 #dee2e6 #fff;
+}
+.ProgramDashboard{
+    height: 100%;
+    max-width: 900px;
+    /* max-width: 1720px; */
+    background: #f2f6ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px 0 48px 0;
+    margin-left: 290px;
+}
+.StudentDashboard{
+    width: 1200px;
+    background-color: #fff;
+    box-shadow: 0 0 4px #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-family: roboto,sans-serif;
+}
+.ProfileContainer{
+    width: 90%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+.ProgramIcon{
+    width: 160px;
+    min-height: 100px;
+    margin: 24px 24px 24px 0;
+    vertical-align: middle;
+    border-style: none;
+}
+.StudentCardTags{
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    font-family: roboto,sans-serif;
+}
+.StudentCardName{
+    display: flex;
+    align-items: baseline;
+    margin: 0 0 11px 0;
+}
+.ProgramName{
+    color: #0096ff;
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1;
+    letter-spacing: .4px;
+    text-align: left;
+}
+.StudentCardOtherDetails{
+    margin: 11px 0 0 0;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+}
+.ClassRank{
+    color: rgba(0,0,0,0.7);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 0 22px 0 0;
+}
+.DetailsValue{
+    color: rgba(0,0,0,0.7);
+    font-size: 18px;
+    font-weight: 600;
+}
+.DetailsTag{
+    color: rgba(0,0,0,0.4);
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.1px;
+    text-transform: capitalize;
+}
+.AverageScore{
+    color: rgba(0,0,0,0.7);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.Shs{
+    color: rgba(0,0,0,0.7);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 0 0 0 22px;
+}
+.StudentAssignmentContainer{
+    width: 90%;
+    margin: 20px auto 0px auto;
+}
+.AssignmentStatusCard{
+    margin: 24px 0;
+    color: rgba(0,0,0,0.7);
+    text-transform: capitalize;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.AssignmentDetails{
+    font-size: 19px;
+    font-weight: 700;
+    font-family: Raleway,sans-serif;
+    margin: 0 0 12px 0;
+    color: rgba(0,0,0,0.7);
+}

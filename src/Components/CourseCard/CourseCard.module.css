@@ -1,0 +1,35 @@
+.CourseCard{
+    border:1px solid #3DAEFF;
+    border-radius:10px;
+    background-color: #fff;
+    margin:6px;
+    padding:25px;
+    box-sizing: border-box;
+    box-shadow: 0 0 4px 0  #3DAEFF;
+    width: calc(25% - 12px);
+    cursor:pointer;
+}
+.CardLink{
+    text-decoration: none;
+    display:flex;
+}
+
+.Thumbnail{
+    width:40%;
+}
+
+.CourseLogo{
+    width:50px;
+}
+.CardInfo{   
+    width:50%;
+    box-sizing: border-box;
+    
+}
+.Title{
+    font-weight: 500;
+    font-size: 24px;
+    margin: 0;
+    letter-spacing: 1px;
+    color: rgba(0, 0, 0, 0.8);
+}

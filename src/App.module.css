@@ -1,0 +1,13 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Raleway', sans-serif;
+  background-color: #F2F6FF;
+}
+.Content{
+  margin:100px 200px 30px 200px;
+}   

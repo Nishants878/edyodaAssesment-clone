@@ -1,0 +1,77 @@
+.ModuleCard{
+    min-height: 244px;
+    width: 22%;
+    border-radius: 10px;
+    box-shadow: 0 0 2px #0096ff;
+    background: #ffffff;
+    padding: 12px;
+    margin: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    font-family: Raleway,sans-serif;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+    text-decoration: none;
+
+}
+.ModuleCard:hover{
+    transform: scale(1.1);
+}
+
+.ModuleLogoWrapper{
+    margin: 8px auto;
+}
+.ModuleLogo{
+    height: 75px;
+    width: 75px;
+    vertical-align: middle;
+    border-style: none;
+}
+
+.ModuleHeader{
+    font-size: 1.1rem;
+    text-align: center;
+    letter-spacing: 1px;
+    font-weight: 600;
+    min-height: 53px;
+    margin: 8px;
+    color: #000000;
+    opacity: 0.6;
+    font-weight: 800;
+}
+.TrainerInfoWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.TrainerLogo{
+    height: 30px;
+    width: 30px;
+    border-radius: 50px;
+    margin-right: 10px;
+    vertical-align: middle;
+    border-style: none;
+}
+.TrainerName{
+    font-size: 13px;
+    font-weight: 600;
+    display: flex;
+    min-height: 44px;
+    align-items: center;
+    color: #007bff;
+}
+.DurationWrapper{
+    font-size: 10px;
+    letter-spacing: 1px;
+    margin: 8px;
+    color: #000000;
+    opacity: 0.6;
+    font-weight: 800;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+}

@@ -1,0 +1,9 @@
+.HomePageContainer{
+    margin-bottom:0px;
+}
+.CourseContainer{
+    width: 100%;
+    margin-top:40px;
+    display: flex;
+    flex-wrap: wrap;
+}

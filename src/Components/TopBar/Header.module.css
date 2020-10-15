@@ -1,0 +1,60 @@
+.NavigationContainer{
+    width: 100%;
+    height: 65px;
+    z-index: 90;
+    padding: 1em 4.875em;
+    background-color: #fff;
+    box-shadow: 0 1px 1px #ccc;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: columns;
+    justify-content: space-between;
+    box-sizing: border-box;
+    z-index: 90;
+    font-family: Open Sans,sans-serif;
+}
+.NavigationContentLeft{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+}
+.LogoImage{
+    width: 200px;
+    height: 40px;
+
+}
+.NavLink{
+    text-decoration: none;
+    color: black;
+}
+.NavItem{
+    margin: 0 24px;
+}
+.NavigationContentRight{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+    margin-right: 60px;
+}
+.Icons{
+    font-size: 20px;
+    float: left;
+    color: black;
+    padding: 16px;
+    cursor: pointer;
+}
+.Drop{
+    padding: 0 5px;
+    font-size: 16px;
+}
+.DropIcon{
+    font-size: 15px;
+    float: left;
+    color: black;
+    cursor: pointer;
+}

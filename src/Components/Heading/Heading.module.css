@@ -1,0 +1,11 @@
+.MainHeading{
+    font-size:40px;
+    color:#343537;
+    font-weight: 500;
+}
+.SubHeading{
+    color:#626367;
+    letter-spacing: 2px;
+    margin-top: 5px;
+    font-family: roboto;
+}

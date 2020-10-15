@@ -1,0 +1,132 @@
+.ProgramDetailMainContainer{
+    width: 900px;
+    font-family: 'Roboto', sans-serif;
+    background: #FFFFFF;
+    box-shadow: 0 0 25px #ccc;
+    margin: 80px auto 22px auto;
+    border-radius: 10px;
+}
+.BackgroundImageSection{
+    border-radius: 10px 10px 0 0;
+   
+    background: orange;
+    z-index: 0;
+}
+.BackgroundImageWrapper{
+    width: 900px;
+    height: 180px;
+    background: teal;
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+    position: absolute;
+
+}
+.BGImage{
+    width: 100%;
+    height: 100%;
+    margin: 0 0 0 0;
+}
+.CourseDetailsWrapper{
+     height: 160px;
+    position: relative;
+    z-index: 2;
+    margin: 0 0 0 48px;
+    
+}
+.CourseNameWrapper{
+    font-size: 1.75rem;
+    color: white;
+    letter-spacing: 1.3px;
+    max-width: 500px;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: left;
+    padding-top: 5px;
+}
+.CourseCode{
+    font-size: 1rem;
+    font-weight: 600;
+    color: #0096ff;
+    letter-spacing: 1.3px;
+    margin-top: 0.5rem;
+}
+.CourseIconsWrapper{
+    margin: 12px 0 0 0;
+    display: flex;
+}
+.CourseDetailsIcons{
+    width: 35px;
+    height: 25px;
+    margin-left: 0;
+    opacity: 0.9;
+    margin: 8px;
+}
+.LeftWrapper{
+    display: flex;
+    align-items: center;
+}
+.SubSectionTitle{
+    font-size: 13px;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+.RightWrapper{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+.ProgramProgressSection{
+    padding: 48px 0 0 60px;
+}
+.ProgramHeader{
+    font-size: 1.5rem;
+    letter-spacing: 00.5px;
+    margin: 0 0 8px 0;
+    color: #000000;
+    opacity: 0.8;
+    font-weight: 800;
+}
+.ProgramDetailsContainer{
+    display: flex;
+    align-items: center;
+}
+.StatusWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 36px 0 0;
+}
+.Numbers{
+    color: #000000;
+    opacity: 0.6;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+.SubSectionText{
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: -1;
+}
+.ModuleHeaderWrapper{
+    padding: 48px 0 0 60px;
+
+}
+.ModulesHeader{
+    font-size: 1.5rem;
+    letter-spacing: 00.5px;
+    margin: 12px 0 0 0;
+    color: #000000;
+    opacity: 0.8;
+    font-weight: 800;
+}
+.ModuleSCardsSection{
+    min-height: 250px;
+    max-width: 900px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 12px 54px 24px 54px;
+}
