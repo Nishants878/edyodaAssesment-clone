@@ -2,6 +2,8 @@
     font-family: roboto;
     margin-top: 80px;
 }
+
+
 .NavWrapper{
     display: flex;
     flex-direction: row;

@@ -1,7 +1,7 @@
 import React,{ useEffect, useState } from 'react';
 import classes from './Curriculum.module.css';
 import { Link } from 'react-router-dom';
-
+import GradesPage from '../GradesPage/GradesPage';
 import Accordion from '../../Components/Accordion/Accordion';
 import Axios from 'axios';
 
@@ -11,7 +11,7 @@ export default function Curriculum(props){
 
     
       const [curriculum, setCurriculum] = useState({});
-     
+      const[toggle, setToggle] = useState(false)
       
 
       useEffect(()=>{
@@ -34,21 +34,42 @@ export default function Curriculum(props){
 
       },[]);
 
+      const changeToggleGrade=()=>{
+          setToggle(true)
+
+      }
+      const changeCurriculumPage=()=>{
+        setToggle(false)
+
+    }
+
+
 
 
 
 
     return(
+        
+        
         <div className={classes.CurriculumMainContainer}>
-           
+          
             
            <div className={classes.NavWrapper}>
-           <Link  className={[classes.NavLinks, classes.Active].join(' ')} >Units</Link>
-              <Link className={classes.NavLinks} to="/gradespage">Grades</Link>
+           <Link onClick={changeCurriculumPage} className={!(toggle) ? [classes.NavLinks, classes.Active].join(' ') : classes.NavLinks} >Units</Link>
+              <Link onClick={changeToggleGrade} className={(toggle) ? [classes.NavLinks, classes.Active].join(' ') : classes.NavLinks} >Grades</Link>
             
            </div>
+           <div className={classes.GradePageContainer}>
+               {(toggle) ?<GradesPage icon={curriculum?.leftSide?.moduleLogo} rank={curriculum?.leftSide?.classRank} 
+               avgScore={curriculum?.leftSide?.avgScore} 
+               SHS={curriculum?.leftSide?.SHS} 
+               moduleName={curriculum?.leftSide?.moduleName} 
+               
+               /> : null}
+               </div>
+           
             
-          <div className={classes.ModuleDetailContainer}>
+          {!(toggle) ?<div className={[classes.ModuleDetailContainer]}>
               <div className={classes.LeftSectionWrapper}>
 
                      <div className={classes.ModuleDetailWrapper}>
@@ -105,7 +126,7 @@ export default function Curriculum(props){
               
               </div>
 
-          </div>
+          </div> :null}
         </div>
     )
 }
