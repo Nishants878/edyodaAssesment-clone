@@ -23,7 +23,7 @@ export default class Header extends Component {
                  </div>
   
                  <div className={classes.NavItem}>
-                      <Link className={classes.NavLink} to="#">Classroom</Link>
+                      <Link className={classes.NavLink} to="#">Random</Link>
                  </div>
   
                  <div className={classes.NavItem}>
