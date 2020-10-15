@@ -1,9 +1,14 @@
-import React from 'react';
+import React,{ useEffect, useState }  from 'react';
 import classes from './GradesPage.module.css';
 import { Link } from 'react-router-dom';
 import AWSIcon from '../../Assets/aws.png';
+import Axios from 'axios';
 
-export default function GradesPage(){
+export default function GradesPage(props){
+
+  
+
+
     return(
         <div className={classes.GradesMainContainer}>
               <div className={classes.NavWrapper}>

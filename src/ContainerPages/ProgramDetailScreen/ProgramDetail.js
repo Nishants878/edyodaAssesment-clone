@@ -1,14 +1,34 @@
-import React from 'react';
+import React,{ useEffect, useState }  from 'react';
 import classes from './ProgramDetail.module.css';
 import BlueBg from '../../Assets/blueBg.jpg';
 import PlaylistIcon from '../../Assets/Playlist.png';
 import Clock from '../../Assets/Clock.png'
 import ModuleCard from '../../Components/ModuleCard/ModuleCard';
+import Axios from 'axios';
 
 
 
 
 export default function ProgramDetail(){
+
+  const [program, setProgram] = useState([]);
+  
+
+  useEffect(()=>{
+
+    async function fetchDataApi() {
+        const request = await Axios.get("https://5f87e6be49ccbb0016177ba2.mockapi.io/programpage")
+        const finalData = request.data;
+        
+        
+        
+        setProgram(finalData);
+        
+    }
+    fetchDataApi();
+
+  },[]);
+
     return(
         <div className={classes.ProgramDetailMainContainer}>
             <div className={classes.ImageSectionWrapper}>
@@ -85,7 +105,12 @@ export default function ProgramDetail(){
            </div>
 
            <div className={classes.ModuleSCardsSection}>
-              <ModuleCard/> <ModuleCard/><ModuleCard/><ModuleCard/><ModuleCard/><ModuleCard/><ModuleCard/>
+
+            {program.map((item)=>{
+                return <ModuleCard key={item.id} id={item.id}  moduleLogo = {item.moduleLogo} moduleName ={item.moduleName} trainer={item.trainer} trainerProfile ={item.trainerProfile}
+                weeks = {item.weeks}/>
+            })}
+          
            </div>
         </div>
     )

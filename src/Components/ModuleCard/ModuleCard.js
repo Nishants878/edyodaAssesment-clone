@@ -4,24 +4,25 @@ import AwsLogo from '../../Assets/aws.png';
 import TrainerPng from '../../Assets/tutor.png';
 import { Link } from 'react-router-dom';
 
-export default function ModuleCard () {
+export default function ModuleCard (props) {
+    
     return (
-        <Link to="/curriculumpage" className={classes.ModuleCard}>
+        <Link to={`/curriculumpage/${props.id}`} className={classes.ModuleCard}>
             <div className={classes.ModuleLogoWrapper}>
-                <img className={classes.ModuleLogo} src={AwsLogo} alt="AwsLogo"/>
+                <img className={classes.ModuleLogo} src={props.moduleLogo} alt="AwsLogo"/>
             </div>
             <div className={classes.MainDetailsWrapper}>
                 <div className={classes.ModuleHeader}>
-                    Intro To AWS
+                    {props.moduleName}
                 </div>
                 <div className={classes.TrainerInfoWrapper}>
-                <img className={classes.TrainerLogo} src={TrainerPng} alt="TrainerPng"/>
+                <img className={classes.TrainerLogo} src={props.trainerProfile} alt="TrainerPng"/>
                <div className={classes.TrainerName}>
-                   Harshith
+                   {props.trainer}
                </div>
                 </div>
                 <div className={classes.DurationWrapper}>
-                    1 WEEKS
+                    {`${props.weeks} WEEKS`}
                 </div>
             </div>
         </Link>
