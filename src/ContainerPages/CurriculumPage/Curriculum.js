@@ -9,32 +9,27 @@ import Axios from 'axios';
 
 export default function Curriculum(){
 
-    //  const [curriculumData, setCurriculumData] =useState([]);
-
-    //  const fetchApi = async () =>{
-    //      const url = "https://5f87e6be49ccbb0016177ba2.mockapi.io/curriculumPage";
-
-    //      const data = await Axios.get(url);
-    //      console.log(data);
-
-    //      setCurriculumData(data.data)
-
-    //  };
-
-    //  useEffect(() =>{
     
-   
-     
-    //     fetchApi();
-        
-    
-    //  }, []); //in this if we leave [] as empty then it works as component did mount
+      const [curriculumn, setCurriculum] = useState([]);
+
+      useEffect(()=>{
+        async function fetchApi() {
+            const request = await Axios.get("https://5f87e6be49ccbb0016177ba2.mockapi.io/curriculumPage")
+            console.log(request.data);
+            setCurriculum(request.data); 
+            return request
+            //This will never give you the updated state, because setState is async
+ 
+        }
+        fetchApi()
+
+      },[]);
 
 
 
     return(
         <div className={classes.CurriculumMainContainer}>
-            {/* <div>{(curriculumData==[]) ?"gfsadfgsadgsdgasg" : JSON.stringify(curriculumData)  }</div> */}
+            
            <div className={classes.NavWrapper}>
            <Link className={[classes.NavLinks, classes.Active].join(' ')} to="/curriculumpage">Units</Link>
               <Link className={classes.NavLinks} to="/gradespage">Grades</Link>
