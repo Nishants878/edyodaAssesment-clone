@@ -1,6 +1,6 @@
 import React,{ useEffect, useState } from 'react';
 import classes from './Curriculum.module.css';
-import { Link } from 'react-router-dom';
+
 import GradesPage from '../GradesPage/GradesPage';
 import Accordion from '../../Components/Accordion/Accordion';
 import Axios from 'axios';
@@ -13,10 +13,11 @@ export default function Curriculum(props){
       const [curriculum, setCurriculum] = useState({});
       const[toggle, setToggle] = useState(false)
       
-
+      const moduleId = props.match.params.moduleId;
+      console.log(moduleId)
       useEffect(()=>{
         async function fetchApi() {
-            const moduleId = props.match.params.moduleId;
+           
             const request = await Axios.get(`https://5f87e6be49ccbb0016177ba2.mockapi.io/curriculumPage`);
             
             const mainData = request.data;
@@ -32,7 +33,7 @@ export default function Curriculum(props){
         }
         fetchApi();
 
-      },[]);
+      },[moduleId]);
 
       const changeToggleGrade=()=>{
           setToggle(true)
@@ -55,8 +56,8 @@ export default function Curriculum(props){
           
             
            <div className={classes.NavWrapper}>
-           <Link onClick={changeCurriculumPage} className={!(toggle) ? [classes.NavLinks, classes.Active].join(' ') : classes.NavLinks} >Units</Link>
-              <Link onClick={changeToggleGrade} className={(toggle) ? [classes.NavLinks, classes.Active].join(' ') : classes.NavLinks} >Grades</Link>
+           <div onClick={changeCurriculumPage} className={!(toggle) ? [classes.NavLinks, classes.Active].join(' ') : classes.NavLinks} >Units</div>
+              <div onClick={changeToggleGrade} className={(toggle) ? [classes.NavLinks, classes.Active].join(' ') : classes.NavLinks} >Grades</div>
             
            </div>
            <div className={classes.GradePageContainer}>
@@ -119,7 +120,7 @@ export default function Curriculum(props){
                   
               {
                   curriculum?.rightSide?.map(item =>{
-                       return  <Accordion key={item.heading} heading={item.heading}/>
+                       return  <Accordion key={item.heading} heading={item.heading}  moduleName={curriculum?.leftSide?.moduleName} />
                   })
               }
                  

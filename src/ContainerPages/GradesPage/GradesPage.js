@@ -1,7 +1,7 @@
 import React from 'react';
 import classes from './GradesPage.module.css';
 
-import AWSIcon from '../../Assets/aws.png';
+
 
 
 export default function GradesPage(props){

@@ -1,0 +1,67 @@
+
+.Cards{
+    width: 280px;
+    padding: 5px;
+    position: relative;
+    min-height: 270px;
+    max-height: 300px;
+    margin-bottom: 10px;
+    border: none;
+    background: inherit;
+    margin-right: 10px;
+}
+
+.CardWrapper{
+    background: #FFFFFF;
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0 0 2px #0096ff;
+    color: rgba(0,0,0,0.8);
+    overflow: hidden;
+    font-family: Roboto;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.CardThumbnail{
+        min-height: 180px;
+}
+.ProgramLinks{
+    text-decoration: none;
+}
+
+.CardThumbnail > img{
+    height: 180px;
+    width: 100%;
+    position: relative;
+    margin: 0px 0 0 0;
+}
+
+.CardDescription{
+    color: rgba(0,0,0,0.8);
+    padding: 1rem;
+    text-decoration: none;
+}
+
+.CourseNameContainer{
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    margin: 0;
+    padding: 0;
+    min-height: 48px;
+    
+}
+
+.CourseUnits{
+        font-size: 14px;
+    font-weight: 500;
+    color: rgba(0,155,255,0.7);
+    letter-spacing: 0.5px;
+    padding: 0;
+    margin-top: 24px;
+    font-style: italic;
+}
+

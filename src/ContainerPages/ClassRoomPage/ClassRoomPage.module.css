@@ -1,0 +1,45 @@
+.BgColor{
+ background-color: #F2F6FF;
+ margin-top: 42px;
+}
+
+.ExtraWidth{
+    height: 20px;
+}
+
+
+.BottomExtra{
+    height: 50px;
+}
+
+.ClassRoomContainer{
+    font-size: 16px;
+    font-family: Raleway;
+    width: 1200px;
+    margin-left: auto;
+    margin-right:auto;
+}
+
+.Offering{font-weight: 500;
+    font-size: 40px;
+    color: rgba(0,0,0,0.8);
+    letter-spacing: 1px;
+margin-bottom: 10px;}
+
+
+.EnrolledCourse{
+    margin-top: 0;
+    font-family: Roboto,sans-serif;
+    color: rgba(0,0,0,0.6);
+    letter-spacing: 1px;
+
+}
+
+.AllCardContainer{
+        box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px auto 0 auto;
+}
+
+/* Cards start here */

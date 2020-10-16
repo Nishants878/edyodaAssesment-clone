@@ -12,18 +12,18 @@ export default class Header extends Component {
              <div className={classes.NavigationContentLeft}>
   
                  <div className={classes.LogoContainer}>
-                    <Link className={classes.NavLink} to="#">
+                    <Link className={classes.NavLink} to="/">
                        <img className={classes.LogoImage} src={EdyodaLogo} alt="Logo"/>
                        
                     </Link>
                  </div>
   
                  <div className={classes.NavItem}>
-                      <Link className={classes.NavLink} to="/HomePage">Practice Arena</Link>
+                      <Link className={classes.NavLink} to="/">Practice Arena</Link>
                  </div>
   
                  <div className={classes.NavItem}>
-                      <Link className={classes.NavLink} to="#">Classroom</Link>
+                      <Link className={classes.NavLink} to="/classroom">Classroom</Link>
                  </div>
   
                  <div className={classes.NavItem}>
