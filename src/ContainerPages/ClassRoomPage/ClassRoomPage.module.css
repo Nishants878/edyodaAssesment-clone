@@ -6,7 +6,11 @@
 .ExtraWidth{
     height: 20px;
 }
-
+.ProgressWrapper{
+    position: absolute;
+    left: 50%;
+    top: 15%;
+}
 
 .BottomExtra{
     height: 50px;

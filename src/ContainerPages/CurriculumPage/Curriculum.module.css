@@ -3,7 +3,11 @@
     margin-top: 80px;
 }
 
-
+.ProgressWrapper{
+    position: absolute;
+    left: 70%;
+    top: 25%;
+}
 .NavWrapper{
     display: flex;
     flex-direction: row;

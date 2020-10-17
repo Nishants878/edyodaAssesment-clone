@@ -7,3 +7,8 @@
     display: flex;
     flex-wrap: wrap;
 }
+.ProgressWrapper{
+    position: absolute;
+    left: 50%;
+    top: 10%;
+}

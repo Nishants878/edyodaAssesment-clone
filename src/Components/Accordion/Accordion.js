@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import RotatingDropIcon from '../../Assets/chevron.svg'
+import RotatingDropIcon from '../../Assets/chevron.svg';
 
 import { Link } from 'react-router-dom';
 import classes from "./Accordion.module.css";

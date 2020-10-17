@@ -13,6 +13,7 @@ import SessionPlanPage from './ContainerPages/SessionPlanPage/SessionPlanPage';
 import SessionRecording from './ContainerPages/SessionRecordingPage/SessionRecordingPage';
 // import TopicDetailsPage from './ContainerPages/TopicsDetailsPage/TopicDetailsPage';
 
+
 function App() {
   return (
     <BrowserRouter>
@@ -29,6 +30,7 @@ function App() {
             <Route path = "/programdetailscreen" component={ProgramDetail} />
             <Route  path="/sessionplan" component={SessionPlanPage} />
             <Route  path="/sessionrecording" component={SessionRecording} />
+            
             </Switch>
         </div>
         

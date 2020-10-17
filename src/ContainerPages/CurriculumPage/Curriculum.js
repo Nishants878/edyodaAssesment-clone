@@ -4,6 +4,7 @@ import classes from './Curriculum.module.css';
 import GradesPage from '../GradesPage/GradesPage';
 import Accordion from '../../Components/Accordion/Accordion';
 import Axios from 'axios';
+import ProgressLoader from '../../Components/ProgressLoaderSection/ProgressLoaderSection';
 
 
 
@@ -11,12 +12,14 @@ export default function Curriculum(props){
 
     
       const [curriculum, setCurriculum] = useState({});
-      const[toggle, setToggle] = useState(false)
+      const[toggle, setToggle] = useState(false);
+      const [progressLoader, setProgressLoader] =  useState(false);
       
       const moduleId = props.match.params.moduleId;
       console.log(moduleId)
       useEffect(()=>{
         async function fetchApi() {
+            setProgressLoader(true)
            
             const request = await Axios.get(`https://5f87e6be49ccbb0016177ba2.mockapi.io/curriculumPage`);
             
@@ -26,7 +29,7 @@ export default function Curriculum(props){
             
             
             setCurriculum(finalData); 
-            
+            setProgressLoader(false)
             return request
             //This will never give you the updated state, because setState is async
  
@@ -53,8 +56,8 @@ export default function Curriculum(props){
         
         
         <div className={classes.CurriculumMainContainer}>
-          
-            
+          <div className={classes.ProgressWrapper}> {progressLoader ? <ProgressLoader/>:null}</div>
+         
            <div className={classes.NavWrapper}>
            <div onClick={changeCurriculumPage} className={!(toggle) ? [classes.NavLinks, classes.Active].join(' ') : classes.NavLinks} >Units</div>
               <div onClick={changeToggleGrade} className={(toggle) ? [classes.NavLinks, classes.Active].join(' ') : classes.NavLinks} >Grades</div>
