@@ -1,0 +1,112 @@
+#skill-cards .card-container{
+    width: 25%;
+    padding: 5px;
+    position: relative;
+}
+
+#skill-cards .card-container .card-wrapper {
+    background: #FFFFFF;
+    padding: 10px 20px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 2px 1px #0096ff;
+    color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    font-family: Raleway;
+    height: 15vh;
+}
+
+.col-8 {
+    padding-left: 25px;
+}
+
+#skill-cards .skill-card-name {
+    font-weight:500;
+    font-size: 24px;
+    margin:0;
+    letter-spacing:1px;
+    word-wrap:wrap;
+}
+
+#skill-cards .card-content {
+    width: 50%;
+}
+
+.card-content:nth-child(1){
+    padding:0 0 0 10px;
+}
+#skill-cards .card-thumbnail {
+    width:65px;
+}
+
+#skill-cards .card-thumbnail img{
+    width: 65px;
+    height: 65px;
+}
+
+
+
+#skill-cards .card-container:hover .edit-btn {
+    opacity: 1;
+    height: 16px;
+    overflow: visible;
+}
+
+#skill-cards .amount {
+    font-style: italic;
+    margin-top: 8px;
+    font-family: Roboto;
+    font-size:15px;
+    color:rgba(0,0,0,0.6);
+}
+/*&&&&&&&&&&&&&&&&&&&&& MEDIA QUERIES START HERE&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&*/
+@media screen and (max-width: 1175px) {
+    .container {
+        padding: 10px 20px;
+        margin-top: 4vh;
+    }
+    #skill-cards .card-thumbnail img {
+        width: 50px;
+        height: 50px;
+    }
+    #skill-cards .card-container{
+        width: 33.3%;
+        
+    }
+}
+
+@media screen and (max-width: 991px) {
+    #skill-cards .skill-card-name {
+        margin: 0;
+    }
+    #skill-cards .card-thumbnail img {
+        width: 50px;
+        height: 50px;
+    }
+    #skill-cards .card-container {
+        width: 50%;
+        
+    }
+}
+
+@media screen and (max-width: 768px) {    
+    #skill-cards .card-container {
+        width: 50%;
+        text-align: left;
+        
+    }
+}
+
+@media screen and (max-width: 530px ) {
+    #skill-cards .card-container {
+        width: 50%;
+        text-align: center;
+        
+    }
+}
+
+
+.course-card-nav-link {
+    text-decoration: none;
+}

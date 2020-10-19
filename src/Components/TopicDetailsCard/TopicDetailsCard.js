@@ -1,20 +1,23 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import classes from './TopicDetailsCard.module.css';
-import { SubHeading } from '../Heading/Heading';
+import './TopicDetailsCard.css';
+
 
 const TopicDetailsCard = (props) => {
-    return(
-        
-                <div className={classes.TopicDetailsCard}>
-                       <Link className={classes.CardLink} to={`/Problems/${props.Coursetitle}`}>
-                        
-                        <div className={classes.CardInfo}>
-                                <p className={classes.TopicName} > {props.topic} </p>
-                                <p className={classes.Status}>{props.status}</p>                           
+    return(  
+        <div className="assignment-status-card">
+                <div className="assignment-details">
+                        <div className="ass-num-name">
+                                <Link to={`/courses/${props.courseTitle}/${props.id}`} >
+                                <span className="ass-num">{props.id}). </span>
+                                <span className="ass-name">{props.name}</span>
+                                </Link>
                         </div>
-                        </Link> 
                 </div>
+                <div className="assignment-score error">
+                        {props.status}
+                </div>
+        </div>
       
         
     );

@@ -1,0 +1,50 @@
+
+
+.course-page{
+    margin: 1rem;
+    font-size: 16px;
+    font-family: Raleway;
+    text-align: left;
+}
+
+#offering {
+    font-weight:500;
+    font-size: 40px;
+    color:rgba(0,0,0,0.8);
+    letter-spacing:1px;
+    margin-bottom:0;
+}
+
+#skill-status {
+    margin-top: 0;
+    font-family:Roboto,sans-serif;
+    color:rgba(0,0,0,0.6);
+    letter-spacing:1px;
+}
+
+.skill {
+    margin: 0 1rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #000000;
+    font-family: Roboto;
+}
+
+.skill:hover {
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5); 
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+#problems-count{
+    font-style: italic;
+}
+
+#skill-cards {
+    display:flex;
+    flex-wrap:wrap;
+    margin-top:20px;
+    width:100%;
+}

@@ -1,0 +1,59 @@
+.assignment-status-card{
+	margin:24px 0;
+	color:rgba(0,0,0,0.7);
+	text-transform:capitalize;
+	width:100%;
+	display:flex;
+	justify-content: space-between;
+}
+.assignment-details > .ass-num-name,.assignment-score{
+	font-size: 19px;
+	font-weight: 700;
+	font-family: Raleway,sans-serif;
+}
+.assignment-details > .ass-num-name{
+	margin:0 0 12px 0;
+}
+
+.ass-name,.ass-num{
+    color: rgba(0,0,0,0.7);
+}
+
+a:link :visited :active :hover {
+    text-decoration: none;
+}
+
+.assignment-details > .ass-submission-date{
+	color:rgba(0,0,0,0.4);
+	margin:12px 0 0 0;
+	font-size:12px;
+	font-weight:500;
+	letter-spacing:0.1px;
+}
+.assignment-score{
+	
+}
+.error{
+	color:#cc0000;
+}
+
+hr {
+    margin-top:1rem;
+    margin-bottom:1rem;
+    border:0;
+    border-top: 1px solid rgba(0,0,0,.1)
+}
+
+@media screen and (max-width:1199px){
+	.student-dashboard-page{width:1000px;}
+	.student-dashboard-card{width:100%;}
+}
+
+@media screen and (max-width:1000px){
+	.student-dashboard-page{width:736px;}
+	.student-dashboard-card{width:100%;}
+}
+@media screen and (max-width:735px){
+	.student-dashboard-page{width:100%;}
+	.student-dashboard-card{width:100%;}
+}

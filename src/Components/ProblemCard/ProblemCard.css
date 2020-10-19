@@ -1,0 +1,103 @@
+.topic{
+    font-family: Roboto;
+    margin: 1.5rem;
+    border-radius: 5px;
+    border: 2px solid #0095FF;
+    color: black;
+    display: flex;
+    align-items: center;
+}
+
+.topic #problem-details {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-right: 10px;
+}
+
+.topic #counter {
+    width: 10vw;
+}
+
+.counter{
+    background-color: #0095FF; 
+    padding: 1rem;
+    color: white;
+}
+
+.problem-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+#problem-title{
+    padding-left: 1rem;
+    padding-top: 0.2rem;
+}
+
+#problem-difficulty{
+    float: right;
+    font-family: Roboto;
+    right: 0;
+    font-style: italic;
+    padding-left: 1rem;
+    padding-top: 1rem;
+}
+
+#problem-count{
+    font-family: Roboto;
+    text-align: right;
+    right: 0;
+    font-style: italic;
+    padding-left: 1rem;
+    padding-top: 1rem;
+}
+
+.topic:hover{
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5); 
+    z-index: 10;
+    position: relative; 
+    top: -1px;
+}
+
+.title{
+    font-family: Roboto;
+    border-radius: 5px;
+    border: 2px solid #0095FF;
+    color: black;
+}
+
+.counter-easy{
+    background-color: #0095FF; 
+    padding: 1rem;
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.counter-medium{
+    background-color: #8455FC; 
+    padding: 1rem;
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.counter-hard{
+    background-color: #FC5AA6; 
+    padding: 1rem;
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+}
+
+#status {
+    padding: 1px 5px;
+    width: auto;
+    border: 2px solid #007bff;
+    color: #007bff;
+}
+
+#status:hover {
+    background-color: whitesmoke;
+}
